@@ -3,6 +3,10 @@ title: "day_3"
 output: html_document
 ---
 
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+```
+
 ```{r}
 library(tidyverse)
 library(lubridate)
@@ -51,8 +55,7 @@ gr_read <- goodreads %>% filter(is.na(date_read) == F) %>%
    date_start = ymd(date_start),
    date_read = ymd(date_read),
    year_read = year(date_read),
-   duration_days = difftime(ymd(gr_read$date_read), ymd(gr_read$date_start), unit = 'days')
- ) %>%
+   duration_days = difftime(ymd(date_read), ymd(date_start), unit = 'days')) %>%
   mutate(
     duration_days = replace_na(as.integer(str_trim(substr(duration_days,1,3))),1)) 
 gr_read$duration_days[gr_read$duration_days == 0] <- 1
@@ -94,9 +97,17 @@ for(i in 1:(nrow(gr_read) - 1)){
                               "Start Date: ", gr_read$date_start[i], "<br>",
                               "End Date: ", gr_read$date_read[i], "<br>",
                               "Duration: ", gr_read$duration_days[i], ' Days')
-                      
   )
 }
+
+p <- p %>% layout(
+                  title = 'Books Read by Date and Read Time',
+                  yaxis = list(
+                    title = "Cumulative Read",
+                    zeroline = F
+                  ))
+p
+```
 
 # to test
 plot_ly() %>%
@@ -116,5 +127,3 @@ plot_ly() %>%
                               "Duration: ", gr_read$duration_days[4], ' Days')
                  #evaluate = T
   )
-
-```
