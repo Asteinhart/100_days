@@ -109,6 +109,28 @@ p <- p %>% layout(
 p
 ```
 
+
+```{r}
+text <- gr_read$title
+# Create a corpus  
+docs <- Corpus(VectorSource(text))
+
+docs <- docs %>%
+  tm_map(removeNumbers) %>%
+  tm_map(removePunctuation) %>%
+  tm_map(stripWhitespace)
+docs <- tm_map(docs, content_transformer(tolower))
+docs <- tm_map(docs, removeWords, stopwords("english"))
+
+dtm <- TermDocumentMatrix(docs) 
+matrix <- as.matrix(dtm) 
+words <- sort(rowSums(matrix),decreasing=TRUE) 
+df <- data.frame(word = names(words),freq=words)
+
+wordcloud(words = df$word, freq = df$freq, min.freq = 3, max.words=200, random.order=FALSE, rot.per=0.1, colors=brewer.pal(8, "Dark2"))
+
+```
+
 # to test
 plot_ly() %>%
 #for(i in 2:(nrow(gr_read) - 1)){
