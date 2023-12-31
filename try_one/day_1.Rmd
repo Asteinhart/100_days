@@ -1,0 +1,115 @@
+---
+title: "day_1"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+#update.packages('tidyverse')
+#install.packages('tidyverse')
+library(tidyverse)
+#install.packages("ggthemes") # Install 
+library(ggthemes) 
+```
+
+## Cleaning Data
+```{r}
+ day_1_raw <- read_csv("/Volumes/GoogleDrive/My Drive/data_stuff/100_days/100_days_data/day_1_data.csv",
+  col_types = cols(
+  tavg = col_double(),
+  count_tavg = col_double(),
+  outside_total = col_double(),
+  perc = col_double()
+  )
+)
+
+breaks = seq(15,65, 5)
+
+day_1_group <- day_1_raw %>%
+ mutate(group_tavg = cut(tavg, breaks = breaks, include.lowest = TRUE, right = FALSE
+ )) %>%
+  group_by(group_tavg) %>%
+  transmute(
+    group_tavg,
+    total_days = sum(count_tavg),
+    outside = sum(outside_total),
+    perc= sum(outside_total)/sum(count_tavg)
+  ) %>%
+  distinct()
+```
+
+``` {r}
+# chart set up
+day_1_group$group_tavg
+# column names
+x_labels = c(	
+    '15°- 19°',
+    '20°- 24°',
+    '25°- 29°',
+    '30°- 34°',
+    '35°- 39°',
+    '40°- 44°',
+    '45°- 49°',
+    '50°- 54°',
+    '55°- 59°',
+    '60°- 65°'
+)
+
+y_labels = c(	
+    '0',
+    '10%',
+    '20%',
+    '30%',
+    '40%',
+    '50%',
+    '60%',
+    '70%',
+    '80%',
+    '90%',
+    '100%'
+)
+
+cc <- scales::seq_gradient_pal("blue", "red", "Lab")(seq(0,1,.1))
+
+```
+
+```{r}
+ggplot(day_1_group, aes(group_tavg,perc) )+
+      geom_point(aes(color = group_tavg, size = 1)) +
+      scale_x_discrete(name = "Temperature °F", breaks = waiver(), labels = x_labels)+
+      scale_y_continuous(name = "Likelihood", breaks = seq(0,1,.1), labels = y_labels, limits = c(0.5,1))+
+      scale_colour_manual(values=cc)+
+      labs(
+       title = "Likelihood of Going Outside vs Temperature (°F) ",
+       subtitle = "I forced myself out in the cold. The sun forced me out in the heat.") +
+      theme_minimal() +
+      theme(
+       # text = element_text(family = "franklin_h"),
+       # plot.title = element_text(family = "karnak", size = 20),
+        legend.position="none",
+         axis.title.x=element_blank(),
+         axis.title.y=element_blank(),
+        
+    )
+      
+
+ggplot(day_1_raw, aes(tavg,perc) )+
+      geom_point()
+
+ggplot(spending_food, aes(x = month, y=n*-1, color = secondary)) + 
+  geom_smooth(se=F)+
+  geom_point()+
+  scale_y_continuous(name = "Spending", breaks=seq(0, 1000, 50))+
+  scale_x_date("Month", date_breaks = "3 month", date_labels = "%Om/%y")
+
+
+```
+
+
+
+
+
