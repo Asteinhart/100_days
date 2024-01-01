@@ -3,4 +3,4 @@
 
 - day 2: d3 bar chart from [link](https://observablehq.com/@d3/lets-make-a-bar-chart/3)
 - day 3: grids in html
-- day 4:
+- day 4: user input to change graph (where do I land)
