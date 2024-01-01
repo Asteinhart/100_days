@@ -1,0 +1,60 @@
+---
+title: "d1"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+install.packages("sf", configure.args = "--with-proj-lib=/usr/local/lib/")
+library(sf)
+brew install pkg-config
+```
+
+```{r}
+# load work orders and clean
+# task completion is initiated to complete
+repairs_raw <- read_csv('/Volumes/GoogleDrive/My Drive/data_stuff/github/100_days_gh/try_two/Public_Works_Work_Orders.csv')
+
+#exploration of functions
+difftime(repairs$`Projected Finish Date`,repairs$`Projected Start Date`,units="days")
+
+
+
+#create date fields, filter, add date_diff fields
+repairs <- repairs_raw %>%
+  mutate(
+    `Date Initiated` = parse_datetime(`Date Initiated`,'%m/%d/%Y %I:%M:%S %p'),
+    `Date Canceled` = parse_datetime(`Date Canceled`,'%m/%d/%Y %I:%M:%S %p'),
+    `Projected Start Date` = parse_datetime(`Projected Start Date`,'%m/%d/%Y %I:%M:%S %p'),
+    `Projected Finish Date` = parse_datetime(`Projected Finish Date`,'%m/%d/%Y %I:%M:%S %p'),
+    `Actual Finish Date` = parse_datetime(`Actual Finish Date`,'%m/%d/%Y %I:%M:%S %p'),
+    `Date Closed` = parse_datetime(`Date Closed`,'%m/%d/%Y %I:%M:%S %p'),
+    lat = sub('.','',map(str_split(repairs_raw$`Geocoded Location`, " "),2)),
+    long = sub('.$','',map(str_split(repairs_raw$`Geocoded Location`, " "),3)),
+  ) %>%
+  mutate (
+    projected_duration = difftime(`Projected Finish Date`,`Projected Start Date`,units="days"),
+    lateness = difftime(`Actual Finish Date`,`Projected Finish Date`,units="days")
+  ) %>%
+  filter(Status == 'Closed', lat != 'ULL' )
+
+```
+
+```{r}
+-- neighborhood shape file 
+neighborhoods <- read_csv('/Volumes/GoogleDrive/My Drive/data_stuff/github/100_days_gh/try_two/Stockton_Neighborhoods.csv')
+```
+
+```{r}
+#map
+
+ggplot(data = world) +
+    geom_sf() +
+    geom_point(data = sites, aes(x = longitude, y = latitude), size = 4, 
+        shape = 23, fill = "darkred") +
+    coord_sf(xlim = c(-88, -78), ylim = c(24.5, 33), expand = FALSE)
+```
+
+
+
