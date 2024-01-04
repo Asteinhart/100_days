@@ -11,4 +11,4 @@
   want at some point to turn this into a book concierge type thing for my articles list and the tab
   <img width="600" alt="day1" src="https://github.com/Asteinhart/100_days/blob/main/2024_jan/screenshots/day3.png">
 - day 4: user input to change graph (where do I land)
-  []("https://github.com/Asteinhart/100_days/blob/main/2024_jan/screenshots/day4.mp4)
+![day4](https://github.com/Asteinhart/100_days/assets/45241656/af0b143f-b406-48e7-ba19-e4e634592daa)
