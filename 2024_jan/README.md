@@ -15,3 +15,4 @@
 - day 5: cumulative chart with axis at max values and annotations (technically also made this yesterday but whatev)
   <img width="1502" alt="Screenshot 2024-01-05 at 10 48 20 PM" src="https://github.com/Asteinhart/100_days/assets/45241656/b76ae124-c257-48b3-a1ce-80c8cfe3de53">
 - day 6: cloned a repo from the internet and adapted for a searchable table
+![day6](https://github.com/Asteinhart/100_days/assets/45241656/20b4b6a9-870a-4061-a3a0-c81ff1dc7084)
