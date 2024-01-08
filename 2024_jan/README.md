@@ -16,3 +16,6 @@
   <img width="1502" alt="Screenshot 2024-01-05 at 10 48 20 PM" src="https://github.com/Asteinhart/100_days/assets/45241656/b76ae124-c257-48b3-a1ce-80c8cfe3de53">
 - day 6: cloned a repo from the internet and adapted for a searchable table
 ![day6](https://github.com/Asteinhart/100_days/assets/45241656/20b4b6a9-870a-4061-a3a0-c81ff1dc7084)
+-day 7: busy day but last time was trying to input data from a csv in the folder to high charts and couldnt get it but got it working now on an old chart and old data
+ <img width="600" alt="day1" src="https://github.com/Asteinhart/100_days/blob/main/2024_jan/screenshots/day7.png">
+
