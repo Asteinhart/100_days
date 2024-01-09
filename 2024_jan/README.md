@@ -19,6 +19,9 @@
   -day 7: busy day but last time was trying to input data from a csv in the folder to high charts and couldnt get it but got it working now on an old chart and old data
   <img width="600" alt="day1" src="https://github.com/Asteinhart/100_days/blob/main/2024_jan/screenshots/day7.png">
 - day 8: bubble charts with noots genre data
-  <img width="600" alt="day1" src="https://github.com/Asteinhart/100_days/blob/main/2024_jan/screenshots/day8.png">
 
-- day 9: something with interactive stuff/ event listener
+<img width="600" alt="day1" src="https://github.com/Asteinhart/100_days/blob/main/2024_jan/screenshots/day8.png">
+
+- day 9: copy basic scrollama implementation https://pudding.cool/process/introducing-scrollama/
+- day 10: something with interactive stuff/ event listener
+
