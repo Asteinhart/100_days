@@ -18,4 +18,6 @@
 ![day6](https://github.com/Asteinhart/100_days/assets/45241656/20b4b6a9-870a-4061-a3a0-c81ff1dc7084)
 -day 7: busy day but last time was trying to input data from a csv in the folder to high charts and couldnt get it but got it working now on an old chart and old data
  <img width="600" alt="day1" src="https://github.com/Asteinhart/100_days/blob/main/2024_jan/screenshots/day7.png">
+- day 8: bubble charts with noots genre data
+- day 9: something with interactive stuff/ event listener
 
