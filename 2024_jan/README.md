@@ -23,5 +23,6 @@
 <img width="600" alt="day1" src="https://github.com/Asteinhart/100_days/blob/main/2024_jan/screenshots/day8.png">
 
 - day 9: copy basic scrollama implementation https://pudding.cool/process/introducing-scrollama/
+
 - day 10: something with interactive stuff/ event listener
 
