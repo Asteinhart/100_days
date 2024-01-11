@@ -26,7 +26,11 @@
 
 https://github.com/Asteinhart/100_days/assets/45241656/7fcb55c9-8f2c-471e-ba88-39a6830c4fe0
 
+- day 10: wanted to make extra graph for donations story so tried bubble but idk if i like it
 
+<img width="600" alt="day1" src="https://github.com/Asteinhart/100_days/blob/main/2024_jan/screenshots/day10.png">
 
-- day 10: something with interactive stuff/ event listener
+- day 11: switching graph form above data to bar chart 
+
+- day x: something with interactive stuff/ event listener
 
