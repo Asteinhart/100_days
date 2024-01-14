@@ -30,7 +30,8 @@ https://github.com/Asteinhart/100_days/assets/45241656/7fcb55c9-8f2c-471e-ba88-3
 
 <img width="600" alt="day1" src="https://github.com/Asteinhart/100_days/blob/main/2024_jan/screenshots/day10.png">
 
-- day 11: switching graph form above data to bar chart 
+- day 11: switching graph form above data to bar chart (ok slight delay but we are back) 
+<img width="600" alt="day1" src="https://github.com/Asteinhart/100_days/blob/main/2024_jan/screenshots/day11.png">
 
 - day x: something with interactive stuff/ event listener
 
