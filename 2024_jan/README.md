@@ -35,5 +35,9 @@ https://github.com/Asteinhart/100_days/assets/45241656/7fcb55c9-8f2c-471e-ba88-3
 
 - day 12: just did some js basic learning today. Kept seeing objects but now understand they are just basically a mix between dictionaries and classes in python in which there is key value matching and you can also have a property that is a function (like a method in a class in python)
 
+- day 13: testing the ability to use google sheets to pull in data to high charts.
+<img width="600" alt="day1" src="https://github.com/Asteinhart/100_days/blob/main/2024_jan/screenshots/day13.png">
+
 - day x: something with interactive stuff/ event listener
+- day x: something with button that changes chart data (2018,2020, ect)
 
