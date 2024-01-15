@@ -33,5 +33,7 @@ https://github.com/Asteinhart/100_days/assets/45241656/7fcb55c9-8f2c-471e-ba88-3
 - day 11: switching graph form above data to bar chart (ok slight delay but we are back) 
 <img width="600" alt="day1" src="https://github.com/Asteinhart/100_days/blob/main/2024_jan/screenshots/day11.png">
 
+- day 12: just did some js basic learning today. Kept seeing objects but now understand they are just basically a mix between dictionaries and classes in python in which there is key value matching and you can also have a property that is a function (like a method in a class in python)
+
 - day x: something with interactive stuff/ event listener
 
