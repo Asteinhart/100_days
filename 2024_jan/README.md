@@ -38,6 +38,11 @@ https://github.com/Asteinhart/100_days/assets/45241656/7fcb55c9-8f2c-471e-ba88-3
 - day 13: testing the ability to use google sheets to pull in data to high charts.
 <img width="600" alt="day1" src="https://github.com/Asteinhart/100_days/blob/main/2024_jan/screenshots/day13.png">
 
+- day x: maybe some html/css/js learning again for a little
+  - [Getting Started with the Web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web)
+  - [Basic HTML & CSS for Non-Web Designers](http://www.dontfeartheinternet.com/)
+  - [30 Days of JavaScript](https://courses.wesbos.com/account)
+  - [Learn JavaScript](https://www.learn-js.org/)
 - day x: something with interactive stuff/ event listener
 - day x: something with button that changes chart data (2018,2020, ect)
 
