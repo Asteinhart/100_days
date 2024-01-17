@@ -42,6 +42,11 @@ https://github.com/Asteinhart/100_days/assets/45241656/7fcb55c9-8f2c-471e-ba88-3
 
 <img width="600" alt="day1" src="https://github.com/Asteinhart/100_days/blob/main/2024_jan/screenshots/day14.png">
 
+- day 15: this was the chart i actually needed to make, this is just a proof of concept 
+
+<img width="600" alt="day1" src="https://github.com/Asteinhart/100_days/blob/main/2024_jan/screenshots/day15.png">
+
+
 - day x: maybe some html/css/js learning again for a little
   - [Getting Started with the Web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web)
   - [Basic HTML & CSS for Non-Web Designers](http://www.dontfeartheinternet.com/)
