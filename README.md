@@ -58,6 +58,8 @@ day 18: clean up political donations charts
 
 commit [here](https://github.com/chicagomaroon/data-visualizations/pull/50/commits/81aa927b01bee43217ac155504b6f5759780d599) 
 
+day 19: pudding cohort pitch
+
 
 - day x: maybe some html/css/js learning again for a little
   - [Getting Started with the Web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web)
