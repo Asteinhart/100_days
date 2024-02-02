@@ -48,19 +48,15 @@ https://github.com/Asteinhart/100_days/assets/45241656/7fcb55c9-8f2c-471e-ba88-3
 
 - day 16: bubble chart reprise 
 
-<img width="600" alt="day1" src="https://github.com/Asteinhart/100_days/blob/main/2024_jan/screenshots/day16.png">
+<img width="600" alt="day1" src="https://github.com/Asteinhart/100_days/blob/main/screenshots/day16.png">
 
 - day 17: leaflet research and scoller with map
 
-<img width="600" alt="day1" src="https://github.com/Asteinhart/100_days/blob/main/2024_jan/screenshots/day16.png">
+![leaflet-scrolly](https://github.com/Asteinhart/100_days/assets/45241656/899d7bb9-7049-462d-89db-67657b2d14b9)
 
-- day 16: bubble chart reprise 
+day 18: clean up political donations charts
 
-<img width="600" alt="day1" src="https://github.com/Asteinhart/100_days/blob/main/2024_jan/screenshots/day16.png">
-
-- day 17: leaflet research and scoller with map
-
-<img width="600" alt="day1" src="https://github.com/Asteinhart/100_days/blob/main/2024_jan/screenshots/day16.png">
+commit [here](https://github.com/chicagomaroon/data-visualizations/pull/50/commits/81aa927b01bee43217ac155504b6f5759780d599) 
 
 
 - day x: maybe some html/css/js learning again for a little
