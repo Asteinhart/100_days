@@ -46,6 +46,14 @@ https://github.com/Asteinhart/100_days/assets/45241656/7fcb55c9-8f2c-471e-ba88-3
 
 <img width="600" alt="day1" src="https://github.com/Asteinhart/100_days/blob/main/screenshots/day15.png">
 
+- day 16: bubble chart reprise 
+
+<img width="600" alt="day1" src="https://github.com/Asteinhart/100_days/blob/main/2024_jan/screenshots/day16.png">
+
+- day 17: leaflet research and scoller with map
+
+<img width="600" alt="day1" src="https://github.com/Asteinhart/100_days/blob/main/2024_jan/screenshots/day16.png">
+
 
 - day x: maybe some html/css/js learning again for a little
   - [Getting Started with the Web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web)
