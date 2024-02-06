@@ -60,6 +60,8 @@ commit [here](https://github.com/chicagomaroon/data-visualizations/pull/50/commi
 
 day 19: pudding cohort pitch
 
+day 20: edits to political donations chart to fit in container pt 1
+
 
 - day x: maybe some html/css/js learning again for a little
   - [Getting Started with the Web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web)
